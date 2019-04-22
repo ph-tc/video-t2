@@ -485,7 +485,21 @@
       text-decoration: none;
       text-align: center;
       background-color: #4286f4;
+      -webkit-animation: colorscale 2s infinite alternate ease-in-out;
       animation: colorscale 2s infinite alternate ease-in-out;
+    }
+
+    @-webkit-keyframes colorscale {
+      from {
+        background-color: #4286f4;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+      to {
+        background-color: #3a5fbe;
+        -webkit-transform: scale(0.96);
+        transform: scale(0.96);
+      }
     }
 
     @keyframes colorscale {
